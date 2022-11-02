@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.sectionLogin{
+  text-align: center;
+  margin-top: 5rem;
+}
+.titleLogin{
+  color: #fff;
+  font-size: 5rem;
+  font-family: delius;
+}
+.imgLogin{
+  width: 15rem;
+  margin-bottom: 20px;
+}
+form input{
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 67px;
+  margin: 0.5rem auto;
+  padding-left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgb(125, 118, 118);
+  border-radius: 10px;
+}
+.buttonLogin {
+  background-color: #D6CD04;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 42rem;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid rgb(125, 118, 118);
+}
+.loginMessage{
+  color: red;
+  font-size: 1.5rem;
+}

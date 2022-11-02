@@ -1,0 +1,25 @@
+<section class="sectionLogin">
+    <h1 class="titleLogin">
+        {{ title }}
+    </h1>
+    <img class = "imgLogin" [src]="image" alt = "logoBurger">
+
+<form class="formLogin" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <input type="email" placeholder="user/email" formControlName="email"/>
+    <p class="loginMessage">
+        <strong *ngIf="loginForm.controls['email'].touched && loginForm.controls['email'].hasError('required')">
+            Campo requerido
+        </strong>
+    </p>
+    <input type="password" placeholder="password" formControlName="password"/>
+    <p class="loginMessage">
+        <strong *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].hasError('required')">
+            Campo requerido
+        </strong> 
+        <strong *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].hasError('minlength')">
+            Como mínimo 6 caracteres
+        </strong>
+    </p>
+    <button type="submit" class="buttonLogin">Ingresar</button>
+</form>
+</section>
